@@ -1,5 +1,12 @@
 
-<form action="/answer" method="get">
-  <input type="text" name="question" placeholder="Ask your question to the coach" value="<%= params[:question] %>">
-  <input type="submit" value="Ask!">
-</form>
+
+<div class="container">
+  <h1>Stupid Coaching</h1>
+  <h6>Ask your coach anything:</h6>
+
+  <form action="/answer" method="get" class="d-flex">
+    <input class="form-control w-100 mb-2 mr-sm-2" type="text" name="question" placeholder="Ask your question to the coach" value="<%= params[:question] %>" >
+    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+  </form>
+</div>
+

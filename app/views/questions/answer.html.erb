@@ -1,9 +1,13 @@
 <h1>Stupid Coaching</h1>
 
-<%= @question %>
-<p>You</p>
+<div id="question-block">
+  <%= @question %>
+  <p> - <i>You</i></p>
+</div>
 
+<div id="answer-block">
 <%= @answer %>
-<p>Your coach</p>
+<p> - <i>Your coach</i></p>
+</div>
 
 <%= link_to 'Ask a new question', '/ask' %>
